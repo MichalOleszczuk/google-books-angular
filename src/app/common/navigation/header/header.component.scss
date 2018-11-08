@@ -1,0 +1,21 @@
+.header {
+    background-color: #33353d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logout-button {
+    background-color: #00d8ff;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    outline: none;
+}
+.nav-logo-wrapper {
+    padding: 5px;
+}
+.nav-button-wrapper {
+    padding: 5px;
+}
