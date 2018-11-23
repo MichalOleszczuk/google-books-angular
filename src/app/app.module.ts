@@ -11,6 +11,9 @@ import { ChildComponent } from './content-wrapper/child.component';
 import { HeaderComponent } from './common/navigation/header/header.component';
 import { FooterComponent } from './common/navigation/footer/footer.component';
 import { ContentWrapperComponent } from './content-wrapper/content-wrapper.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+import { HomeComponent } from './components/home/home.component';
 
 // Add an icon to the library for convenient access in other components
 library.add(fas);
@@ -21,12 +24,15 @@ library.add(fas);
     HeaderComponent,
     FooterComponent,
     ContentWrapperComponent,
-    ChildComponent
+    ChildComponent,
+    LoginComponent,
+    RegisterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
+    FontAwesomeModule,
     AppRoutingModule,
-    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
