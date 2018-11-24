@@ -7,10 +7,8 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ChildComponent } from './content-wrapper/child.component';
 import { HeaderComponent } from './components/home/navigation/header/header.component';
 import { FooterComponent } from './components/home/navigation/footer/footer.component';
-import { ContentWrapperComponent } from './content-wrapper/content-wrapper.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { HomeComponent } from './components/home/home.component';
@@ -24,8 +22,6 @@ library.add(fas);
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    ContentWrapperComponent,
-    ChildComponent,
     LoginComponent,
     RegisterComponent,
     HomeComponent,
