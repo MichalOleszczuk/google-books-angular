@@ -8,12 +8,13 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ChildComponent } from './content-wrapper/child.component';
-import { HeaderComponent } from './components/common/navigation/header/header.component';
-import { FooterComponent } from './components/common/navigation/footer/footer.component';
+import { HeaderComponent } from './components/home/navigation/header/header.component';
+import { FooterComponent } from './components/home/navigation/footer/footer.component';
 import { ContentWrapperComponent } from './content-wrapper/content-wrapper.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { HomeComponent } from './components/home/home.component';
+import { ContentComponent } from './components/home/content/content.component';
 
 // Add an icon to the library for convenient access in other components
 library.add(fas);
@@ -27,7 +28,8 @@ library.add(fas);
     ChildComponent,
     LoginComponent,
     RegisterComponent,
-    HomeComponent
+    HomeComponent,
+    ContentComponent
   ],
   imports: [
     BrowserModule,

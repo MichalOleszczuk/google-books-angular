@@ -3,6 +3,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    min-height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 .logout-button {
     background-color: #00d8ff;
