@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -30,6 +31,7 @@ library.add(fas);
   imports: [
     BrowserModule,
     FontAwesomeModule,
+    ReactiveFormsModule,
     AppRoutingModule,
   ],
   providers: [],

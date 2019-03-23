@@ -1,14 +1,14 @@
 <img class="angular-logo" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-<form class="login-form">
+<form class="login-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
   <div class="login-title">Angular | Boilerplate</div>
   <div class="login-inputs">
     <div class="login-input-wrapper">
       <label for="inputEmail">Email address:</label>
-      <input type="email" id="inputEmail" required="">
+      <input type="email" id="inputEmail" required="" formControlName="email">
     </div>
     <div class="login-input-wrapper">
       <label for="inputPassword">Password:</label>
-      <input type="password" id="inputPassword" required="">
+      <input type="password" id="inputPassword" required="" formControlName="password">
     </div>
     <button class="login-button" type="submit">Sign in</button>
   </div>
