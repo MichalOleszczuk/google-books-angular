@@ -8,8 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class ContentComponent implements OnInit {
 
   constructor() { }
+  private spin = false;
 
   ngOnInit() {
+  }
+
+  onSpin(event: MouseEvent) {
+    console.log(event, 'SPIN');
+    this.spin = !this.spin;
+    console.log('spin', this.spin)
   }
 
 }

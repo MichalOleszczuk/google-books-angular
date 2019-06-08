@@ -22,12 +22,12 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
     this.loginForm = this.formBuilder.group({
-      email: ['', Validators.required],
-      password: ['', Validators.required]
-  });
+      email: [null, [Validators.required, Validators.email]],
+      password: [null, Validators.required]
+    });
 
-  // get return url from route parameters or default to '/'
-  this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
+    // get return url from route parameters or default to '/'
+    this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
   }
 
   // convenience getter for easy access to form fields
@@ -38,9 +38,14 @@ export class LoginComponent implements OnInit {
 
     // stop here if form is invalid
     if (this.loginForm.invalid) {
-        return;
+      return;
     }
-    console.log('siema', this.f.email.value, this.f.password.value);
+    const email = this.f.email.value;
+    const password = this.f.password.value;
+    const user = { email: email, password: password };
+    console.log('LOGIN', user);
+    localStorage.setItem('currentUser', JSON.stringify(user));
+    this.router.navigate(['/']);
   }
 
 }

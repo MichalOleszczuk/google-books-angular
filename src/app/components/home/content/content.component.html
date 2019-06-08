@@ -1,3 +1,27 @@
 <div class="content">
-  
+  <div class="dashboard">
+    <h1 class="dashboard-title">Wellcome to Angular boilerplate!</h1>
+    <div class="dashboard-content">
+      <h2>It's based on create-react-app enhanced with:</h2>
+      <ul class="dashboard-list">
+        <li>- containers examples</li>
+        <li>- components examples</li>
+        <li>- router routes examples</li>
+        <li>- routes guardians</li>
+        <li>- input validators</li>
+        <li>- asynchronous calls with saga examples</li>
+        <li>- rootReducer, rootSaga examples</li>
+        <li>- ready requests library based on axios</li>
+        <li>- translation from counterpart</li>
+        <li>- jQuery added to WebPack configuration with global access</li>
+        <li>- bootstrap and font awesome (if you want to activate bootstrap go to main index.jsc and uncomment it)</li>
+      </ul>
+      <div class="spinner-box" (click)="onSpin($event)">
+        <i class="fa fa-cog fa-5x" aria-hidden="true"></i>
+        <fa-icon [icon]="['fa', 'cog']" [ngStyle]="{display:'inline-block'}" 
+        size="5x" aria-hidden="true" [ngClass]="spin ? 'fa-spin' : ''"></fa-icon>
+        <p>Spin me!</p>
+      </div>
+    </div>
+  </div>
 </div>
